@@ -1,1 +1,1 @@
-Python Basics using shell scripts
+Alx higher language activities covering Python
