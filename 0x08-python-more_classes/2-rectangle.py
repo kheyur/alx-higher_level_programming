@@ -15,14 +15,14 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getter that returns value of 'height'.
-        Returns: value of `height` attribute.
+        """Getter to return value of 'height'.
+        Returns: value of `height`.
         """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Setter to define value of 'height'.
+        """Setter to define value for 'height'.
         Args:
             value (int): value to use for `height`.
         Raises:
@@ -37,14 +37,14 @@ class Rectangle:
 
     @property
     def width(self):
-        """Getter that returns value of 'width'.
-        Returns: value of `width` attribute.
+        """Getter to return value of 'width'.
+        Returns: value of `width`.
         """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Setter to define value of 'width'.
+        """Setter to define value for 'width'.
         Args:
             value (int): value to use for `width`.
         Raises:
@@ -57,13 +57,12 @@ class Rectangle:
             raise ValueError('width must be >= 0')
         self.__width = value
 
-     def area(self):
+    def area(self):
         """Method to calculate area of Rectangle instance"""
         return self.width * self.height
 
-     def perimeter(self):
+    def perimeter(self):
         """Method to calculate perimeter length of Rectangle instance.
         Returns: 2 * ('width' + 'height') if both `width` and `height` > 0, else 0.
         """
-        return 2*(self.width + self.height) * bool(self.width and self.height)        
-        
+        return 2*(self.width + self.height) * bool(self.width and self.height)
